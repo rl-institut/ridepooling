@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ridepooling"
+version = "0.1.0"
+description = "Fleet simulation that generates a schedule out of ride requests"
+authors = ["Marcus Schober"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/marcusschober/ridepooling"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4.0"
+numpy = "^1.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
