@@ -1,0 +1,8 @@
+/venv
+.DS_Store
+.idea
+**/results/
+__pycache__
+.tox
+.coverage
+.idea
