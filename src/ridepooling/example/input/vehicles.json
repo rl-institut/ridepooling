@@ -1,0 +1,16 @@
+{
+  "vehicles": {
+    "vehicle1": {
+        "name": "bus_inductive_1_BB",
+        "id": 1,
+        "seats": 6,
+        "type": "EZ10"
+    },
+    "vehicle2": {
+        "name": "bus_inductive_2_BB",
+        "id": 2,
+        "seats": 6,
+        "type": "EZ10"
+    }
+  }
+}
