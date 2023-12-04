@@ -1,7 +1,22 @@
 RidePooling
 ===========
 
-Fleet simulation that generates a schedule out of ride requests.
+Simulation Tool to distribute ride requests among vehicles. Ride requests can either be created from synthetic demand profiles, or can be imported as .csv. 
+The requests will be distributed to the vehicles according to the selected parameters:
+* delay_factor: creating the least possible delay for passangers
+* pooling_factor: create the highest possible pooling quote
+* balance_factor: distributing the requests evenly among the vehicles
+* distance_factor: giving the requests to the vehicle closest to the passanger
+
+The simulation creates all the possible schedules for the vehicles and selects the most fitting for the selected parameters.
+A request is rejected if the maximum delay is exceeded.
+
+outputs:
+* schedule: table of all trips for all vehicles
+* requests_denied: list of denied requests
+* requests: copy of all processed requests
+* summary: summary of simulation and per vehicle with relevant statistical data
+* summary per vehicle: table of trips per vehicle. 
 
 Get started
 -----------
