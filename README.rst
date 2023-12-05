@@ -27,13 +27,13 @@ You can clone the current repository of RidePooling to your local machine using 
 
 .. code:: bash
 
-    git clone https://github.com/marcusschober/ridepooling.git
+    git clone https://github.com/rl-institut/ridepooling.git
 
 Or SSH:
 
 .. code:: bash
 
-    git clone git@github.com:marcusschober/ridepooling.git
+    git clone git@github.com:rl-institut/ridepooling.git
 
 Setting up an environment
 -------------------------
@@ -68,14 +68,23 @@ cache directory, and display a randomly generated name for the virtual environme
 
     poetry env use python
 
-or on Windows
+| or on Windows
 
 .. code:: bash
 
     poetry env use py
 
-| Poetry also installs any dependencies listed in the project’s pyproject.toml file.
+| Next, install the dependencies via
 
+.. code:: bash
+
+    poetry install
+
+| Now, you can either activate the environment:
+| Terminal:  ``source .venv/bin/activate``
+| Windows: ``.venv\Scripts\activate``
+
+| or write ``poetry run`` before any of the following terminal commands.
 
 Running the program
 -------------------
@@ -94,12 +103,11 @@ In PyCharm, this can be set up as a run configuration:
 Example
 -------
 
-to run example use:
+To run the example, use:
 
 .. code:: bash
 
     python -m ridepooling
-
 
 
 Features
